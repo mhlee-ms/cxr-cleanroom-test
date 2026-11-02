@@ -23,7 +23,26 @@
   ],
   "figure": "",
   "note": "중증도 대리 지표는 복합 소견, 응급·입원 방문 유형 중 무엇을 인정할지 임상의 판단이 필요하다. 라벨이 영상 판독 기준인지 보고서 기준인지도 확인이 필요하다. 이 분석은 가설 생성용이다.",
-  "checks": [],
+  "checks": [
+    {
+      "ok": false,
+      "name": "출처 실재",
+      "by": "모델",
+      "detail": "Crossref confirms the DOI, title, authors, journal, and 2026-07-22 publication date, and the repository paper record matches the abstract claims. The DOI publisher page redirected to Nature but was unreachable from this environment (HTTP 403), so the publisher abstract could not be independently confirmed."
+    },
+    {
+      "ok": true,
+      "name": "데이터 분석",
+      "by": "모델",
+      "detail": "Independent SELECT/WITH queries on llm.hospital reproduced all reported cohort, visit-type, finding-count, acquisition-diversity, and paired-patient aggregates, including 272 images, 153 patients, AP 88/56, PA 184/130, and paired 33 patients."
+    },
+    {
+      "ok": false,
+      "name": "이전 에이전트",
+      "by": "모델",
+      "detail": "The approved presentation plan includes adjusted logistic regression with position, severity proxy, institution, and patient-cluster correction as item 5. The README says it was not performed, but no approved scope change replaces that required analysis; the CXR handoff correctly covers only items 3, 4, and 6."
+    }
+  ],
   "cxr": {
     "question": "같은 DenseNet 모델의 이상 소견 분류 성능과 Grad-CAM 근거가 AP(88장)와 PA(184장)에서 달라지는가?",
     "runs": [
