@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="sans-serif" font-size="13">
+<text x="320" y="24" text-anchor="middle" font-size="16">자세별 코호트 구성 비교 (AP 88장 vs PA 184장)</text>
+<line x1="70" y1="50" x2="70" y2="290" stroke="#333"/><line x1="70" y1="290" x2="610" y2="290" stroke="#333"/>
+<line x1="66" y1="290" x2="610" y2="290" stroke="#ddd"/><text x="60" y="294" text-anchor="end">0</text>
+<line x1="66" y1="210" x2="610" y2="210" stroke="#ddd"/><text x="60" y="214" text-anchor="end">20</text>
+<line x1="66" y1="130" x2="610" y2="130" stroke="#ddd"/><text x="60" y="134" text-anchor="end">40</text>
+<line x1="66" y1="50" x2="610" y2="50" stroke="#ddd"/><text x="60" y="54" text-anchor="end">60</text>
+<text x="20" y="170" transform="rotate(-90 20 170)" text-anchor="middle">해당 장수 비율 (%)</text>
+<rect x="90" y="86" width="40" height="204" fill="#d9534f"/><text x="110" y="82" text-anchor="middle">51.1</text>
+<rect x="134" y="112" width="40" height="178" fill="#337ab7"/><text x="154" y="108" text-anchor="middle">44.6</text>
+<text x="132" y="310" text-anchor="middle">이상 소견</text>
+<rect x="220" y="186" width="40" height="104" fill="#d9534f"/><text x="240" y="182" text-anchor="middle">26.1</text>
+<rect x="264" y="231" width="40" height="59" fill="#337ab7"/><text x="284" y="227" text-anchor="middle">14.7</text>
+<text x="262" y="310" text-anchor="middle">복합 소견</text>
+<rect x="350" y="126" width="40" height="164" fill="#d9534f"/><text x="370" y="122" text-anchor="middle">40.9</text>
+<rect x="394" y="94" width="40" height="196" fill="#337ab7"/><text x="414" y="90" text-anchor="middle">48.9</text>
+<text x="392" y="310" text-anchor="middle">응급·입원</text>
+<rect x="480" y="67" width="40" height="223" fill="#d9534f"/><text x="500" y="63" text-anchor="middle">55.7</text>
+<rect x="524" y="101" width="40" height="189" fill="#337ab7"/><text x="544" y="97" text-anchor="middle">47.3</text>
+<text x="522" y="310" text-anchor="middle">남성</text>
+<rect x="440" y="40" width="12" height="12" fill="#d9534f"/><text x="458" y="51">AP (n=88)</text><rect x="530" y="40" width="12" height="12" fill="#337ab7"/><text x="548" y="51">PA (n=184)</text>
+<text x="320" y="345" text-anchor="middle" font-size="11">표본이 작아 차이는 기술적 수치이며 통계적 결론이 아님</text>
+</svg>
