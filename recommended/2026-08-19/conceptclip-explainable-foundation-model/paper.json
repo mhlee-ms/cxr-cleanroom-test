@@ -1,0 +1,15 @@
+{
+  "id": "conceptclip-explainable-foundation-model",
+  "title": "An explainable biomedical foundation model via large-scale concept-enhanced vision–language pretraining",
+  "authors": ["Yuxiang Nie", "Sunan He", "Yequan Bie", "Yihui Wang", "Zhixuan Chen", "Shu Yang", "Zhiyuan Cai", "Linshan Wu", "Hongmei Wang", "Xi Wang", "Ngai Shing Cheng", "Luyang Luo"],
+  "venue": "Nature Biomedical Engineering",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41551-026-01764-x",
+  "abstract": "Artificial intelligence for medical imaging is required to be accurate and interpretable to clinicians. However, current multimodal biomedical foundation models often prioritize performance over explainability. Here we present ConceptCLIP, an explainable biomedical foundation model that achieves state-of-the-art diagnostic accuracy while delivering human-interpretable explanations across diverse imaging modalities. We curate MedConcept-23M, a large-scale dataset comprising 23 million biomedical image-text-concept triplets. Leveraging this dataset, we pretrain ConceptCLIP via joint image-text and region-concept alignment for precise and interpretable medical image analysis. Across a large-scale benchmark covering 78 datasets in 10 imaging modalities, ConceptCLIP demonstrates superior diagnostic performance while providing human-understandable explanations. In a clinician user study spanning three modalities, the concept-based explanations provided by ConceptCLIP help clinicians verify model predictions and identify potential errors. As an explainable biomedical foundation model, ConceptCLIP represents a critical milestone towards the widespread clinical adoption of AI, thereby advancing trustworthy AI in medicine.",
+  "axes": ["설명 가능성", "병변 위치 표시"],
+  "takeaway": "개념 기반 설명을 제공하는 범용 의료영상 파운데이션 모델이 78개 데이터셋에서 우수한 진단 성능을 보였고, 임상의 사용자 연구에서 설명이 예측 검증과 오류 발견에 도움이 되었다.",
+  "relevance": "우리 코호트는 흉부 X선 272장으로 침윤(21장 단독), 무기폐(16장), 결절(7장) 등 소견이 다양하여, 히트맵 대신 개념 설명이 임상의의 판단을 돕는지 비교해 볼 소재가 된다. 소수 소견(결절 등)의 놓침을 임상의가 설명으로 찾아낼 수 있는지가 데모의 핵심 질문과 겹친다.",
+  "caveat": "논문의 임상의 연구는 세 가지 영상 양식에 대한 것으로 우리 코호트의 흉부 X선 판독 개선을 직접 보여주지 않으며, 우리 데이터로 판독자 연구를 재현할 수 없다.",
+  "check": "Grad-CAM 히트맵과 개념 기반 설명 중 어느 쪽이 임상의가 모델의 결절 위음성을 더 잘 알아차리게 하는가?"
+}
