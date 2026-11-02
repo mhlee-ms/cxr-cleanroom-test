@@ -1,0 +1,15 @@
+{
+  "id": "clear-auditable-radiology-foundation-model",
+  "title": "CLEAR: an auditable foundation model for radiology grounded in clinical concepts",
+  "authors": ["Tianyu Han", "Riga Wu", "Yu Tian", "Firas Khader", "Lisa C. Adams", "Keno K. Bressem", "Christos A. Davatzikos", "Jakob Nikolas Kather", "Li Shen", "David A. Mankoff", "Eduardo Mortani Barbosa", "Daniel Truhn"],
+  "venue": "Nature Biomedical Engineering",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41551-026-01741-4",
+  "abstract": "'Black box' deep learning models for medical image interpretation limit clinical trust and analysis of performance degradation. Here we introduce Concept-Level Embeddings for Auditable Radiology (CLEAR), an auditable foundation model based on clinical concepts. Trained on over 0.87 million image-report pairs from 239,391 patients, CLEAR learns a visual representation and projects chest X-rays into a semantically rich space defined by large language model embeddings, making every prediction decomposable into weighted contributions from individual radiological observations. External validation on four large, physician-annotated datasets from the United States, Europe and Asia shows that CLEAR not only achieves state-of-the-art classification performance but also enables applications: auditable zero-shot pathology detection, systematic identification of radiological confounders and the creation of expert-level concept bottleneck models from data-driven concepts. By integrating clinical knowledge directly into its reasoning process, CLEAR offers a framework for robust model auditing, safer deployment and enhanced physician-AI collaboration, advancing towards trustworthy medical AI.",
+  "axes": ["설명 가능성", "기관 간 일반화"],
+  "takeaway": "흉부 X선 예측을 임상 개념별 기여도로 분해할 수 있는 모델이 4개 외부 데이터셋에서 최고 수준의 분류 성능을 보였다.",
+  "relevance": "우리 코호트는 272장(환자 153명)의 흉부 X선이며 5개 기관(기관당 48–62장)에서 왔고, 이상 없음 145장 대비 침윤·무기폐·결절 등 다양한 소견이 섞여 있어 개념 단위 감사와 기관별 성능 비교를 시험하기에 적합하다. AP 88장·PA 184장이 혼재해 촬영 자세 같은 방사선학적 교란 요인을 찾는 분석과도 맞물린다.",
+  "caveat": "논문의 외부 검증은 대규모 실제 데이터셋 기준이며, 우리 코호트의 규모(272장)와 소견별 표본 수(예: 결절 7장)로는 개념 수준 성능이나 교란 요인 탐지를 통계적으로 재확인하기 어렵다.",
+  "check": "현재 사용 중인 DenseNet Grad-CAM 오류 사례를 CLEAR식 개념 분해로 보면 AP/PA 같은 교란 요인이 드러나는가?"
+}

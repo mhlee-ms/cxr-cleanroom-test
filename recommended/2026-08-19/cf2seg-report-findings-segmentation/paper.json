@@ -1,0 +1,15 @@
+{
+  "id": "cf2seg-report-findings-segmentation",
+  "title": "Grounding Radiology Report Findings into Medical Image Segmentation",
+  "authors": ["Suyang Xi", "Songtao Hu", "Shansong Wang", "Hong Ding", "Yuheng Li", "Wenfeng He", "Kuo Zhang", "Luke del Balzo", "Chong Zhong", "Mingzhe Hu", "Catherine C. Liu", "Yunhao Liu"],
+  "venue": "npj Digital Medicine",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41746-026-03051-0",
+  "abstract": "Routine radiology practice documents abnormalities primarily in narrative reports rather than pixel-level annotations. However, many clinically important analyses require spatially localized evidence. This mismatch limits the reuse of large-scale image-report archives for spatially resolved quantitative analysis, as heterogeneous clinical findings cannot be directly translated into consistent spatial representations. We therefore present Clinical-Findings-Guided Segmentation (CF2Seg), a chest X-ray segmentation framework that learns spatial representations directly from full radiology findings. We further curate a multi-source benchmark comprising 53,386 examinations, each paired with expert spatial annotations and corresponding reports across diverse thoracic pathologies and institutions. CF2Seg uses a dual-stage text–image fusion strategy in which report findings guide feature formation and are revisited during decoding to improve boundary delineation across scales. On a unified multi-source benchmark, CF2Seg achieves strong overall performance and remains stable under clinically realistic variation, including distribution shift, annotation scarcity, and clinically realistic image and report perturbations. Beyond segmentation accuracy, CF2Seg-derived masks preserve proportional lesion-burden trends with strong agreement to expert annotations, supporting retrospective spatial annotation and quantitative reuse of large-scale clinical image–report archives.",
+  "axes": ["병변 위치 표시", "기관 간 일반화"],
+  "takeaway": "영상의학 보고서의 소견 문장만으로 흉부 X선 병변 분할을 학습할 수 있고, 분포 이동과 보고서 변형에도 안정적이었다.",
+  "relevance": "우리 코호트는 영상과 함께 판독 보고서 및 소견 라벨이 있어(이상 소견 127장, 이상 없음 145장) Grad-CAM 히트맵이 가리키는 위치를 보고서 문장과 대조하는 접근과 직접 맞닿는다. 5개 기관에서 수집되어 기관 간 분포 이동 평가에도 쓸 수 있다.",
+  "caveat": "우리 데이터에는 전문가 픽셀 단위 병변 주석이 없어 분할 정확도나 병변 부담 추세 일치도를 검증할 수 없다.",
+  "check": "보고서에 기재된 병변 위치(좌/우, 상/하엽)가 Grad-CAM 히트맵 위치와 일치하는 비율은 소견별로 어느 정도인가?"
+}
